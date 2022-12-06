@@ -1,2 +1,2 @@
-fetch('data.json')
-   .then(res=>res.json())
+fetch("data.json")
+   .then(res=>console.log(res))
