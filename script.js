@@ -1,6 +1,6 @@
 async function getUser() {
     try {
-      const response = await fetch('https://github.com/edhansa/Front_End/data.json', {
+      const response = await fetch('data.json', {
         method: 'POST',
         headers: {
           accept: 'application/json',
