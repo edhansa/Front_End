@@ -16,9 +16,9 @@ function afficherContenuJSON() {
     if (xhr.status === 200) {
       // Si la réponse est réussie, on affiche le contenu du fichier JSON dans la div
       var json = JSON.parse(xhr.responseText);
-      for (var i = 0; i < json.length; i++) {
-        //console.log(json[i].nom);
-        el.innerHTML = el.innerHTML + json[i].Column2;
+      for (var i = 1; i < json.length; i++) {
+        console.log(json[i].Column2);
+        //el.innerHTML = el.innerHTML + json[i].Column2;
       }
       
       //el.innerHTML = xhr.responseText;
