@@ -17,7 +17,7 @@ function afficherContenuJSON() {
       // Si la réponse est réussie, on affiche le contenu du fichier JSON dans la div
       var json = JSON.parse(xhr.responseText);
       for (var i = 0; i < json.length; i++) {
-        console.log(json[i].nom);
+        //console.log(json[i].nom);
         el.innerHTML = el.innerHTML + json[i].Column2;
       }
       
