@@ -22,14 +22,6 @@ function afficherContenuJSON() {
     }
   }
 }
-Pour utiliser cette fonction, il vous suffit de l'appeler lorsque vous souhaitez afficher le contenu du fichier JSON dans la div. Par exemple :
-
-Copy code
-<button onclick="afficherContenuJSON()">Afficher le contenu du fichier JSON</button>
-N'oubliez pas d'inclure l'élément div dans votre code HTML :
-
-Copy code
-<div id="maDiv"></div>
 
 
 
