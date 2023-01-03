@@ -15,7 +15,13 @@ function afficherContenuJSON() {
   xhr.onload = function() {
     if (xhr.status === 200) {
       // Si la réponse est réussie, on affiche le contenu du fichier JSON dans la div
-      el.innerHTML = xhr.responseText;
+      var json = JSON.parse(xhr.responseText);
+      for (var i = 0; i < json.length; i++) {
+        console.log(json[i].nom);
+        el.innerHTML = el.innerHTML + json[i].Column2;
+      }
+      
+      //el.innerHTML = xhr.responseText;
     } else {
       // Si la réponse est un échec, on affiche un message d'erreur
       el.innerHTML = "Erreur lors de la récupération du fichier JSON";
