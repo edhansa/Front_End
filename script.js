@@ -23,7 +23,7 @@ function afficherLignes(option) {
       
       for (var i = 0; i < json.length; i++) {
         if (json[i].Column1 === option) {
-          lignes.push(json[i]);
+          lignes.push(json[i].Recommandation);
         }
       }
 
