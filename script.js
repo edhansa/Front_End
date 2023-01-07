@@ -21,7 +21,7 @@ function afficherLignes(option) {
       var lignes = [];
 
       
-      for (var i = 0; i < json.length; i++) {
+      for (var i = 1; i < json.length; i++) {
         if (json[i].Column1 === option) {
           lignes.push(json[i].Recommandation);
         }
